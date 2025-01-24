@@ -11,6 +11,8 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { SingularPerson } from "./views/singularPerson";
 import { SingularPlanet } from "./views/singularPlanet";
+import { SingularStarship } from "./views/singularStarship";
+
 
 //create your first component
 const Layout = () => {
@@ -30,6 +32,7 @@ const Layout = () => {
 						<Route path="*" element={<h1>Not found!</h1>} />
 						<Route path="/people/:id" element={<SingularPerson />} />
 						<Route path="/planet/:id" element={<SingularPlanet />} />
+						<Route path="/starships/:id" element={<SingularStarship/>}/>
 					</Routes>
 					<Footer />
 				</ScrollToTop>
